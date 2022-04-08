@@ -52,7 +52,7 @@
     grid-area: kontaktformular;
 }
 
-.video
+.videoplayer
 {
     grid-area: video;
 }
@@ -76,6 +76,8 @@
 {
     grid-area: footer;
 }
+
+/* Grid afsluttes */
 
 @media screen and (min-width: 736px)
 {
