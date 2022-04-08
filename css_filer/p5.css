@@ -4,6 +4,7 @@
 {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Skaber grid */
@@ -21,6 +22,14 @@
     "priser om-os tilbud"
     "footer footer footer"
     ;
+}
+
+/* Definere farve på alle headers og paragrafer */
+
+h1, h2, h3, p
+{
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Giver grid farver så det nemt at se */
@@ -79,14 +88,67 @@
 
 /* Grid afsluttes */
 
-#footerimg
+.footerbg
 {
-    width: 100vw;
-    height: 100vh;
+    background-size: 100% 100vh;
     object-fit: cover;
     filter: brightness(.5);
     /* Højere brightness = mørkere */
+    background-image: url(../Mediefiler/jpeg/img_pulvis.jpg);
+    background-repeat: no-repeat;
 }
+
+.footerindhold
+{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 10rem;
+    
+}
+
+.footerboks
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.footerboks h2
+{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.footerboks p
+{
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.aabningstider, .kontakt_info, .adresse
+{
+    margin-top: 15rem;
+}
+
+.ur_footer, .telefon_footer, .maps_footer
+{
+    display: flex;
+    justify-content: center;
+}
+
+.kontakt_info p a
+{      
+    text-decoration: none;
+    color: #fff;
+}
+
+
 
 
 @media screen and (min-width: 736px)
