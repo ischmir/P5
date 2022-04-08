@@ -26,10 +26,9 @@
 
 /* Definere farve på alle headers og paragrafer */
 
-h1, h2, h3, p
+h1, h2, h3, h4
 {
-    color: #fff;
-    text-decoration: none;
+    text-align: center;
 }
 
 /* Giver grid farver så det nemt at se */
@@ -88,6 +87,45 @@ h1, h2, h3, p
 
 /* Grid afsluttes */
 
+.tre_bokse
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.tre_bokse h2
+{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.tre_bokse p
+{
+    display: flex;
+    justify-content: center;
+}
+
+.priser_png, .om_os_png, .tilbud_png
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.priser
+{
+    margin-left: 1rem;
+}
+
+.tilbud
+{
+    margin-right: 1rem;
+}
+/* Footer startes */
+
 .footerbg
 {
     background-size: 100% 100vh;
@@ -123,12 +161,16 @@ h1, h2, h3, p
     margin-bottom: 2rem;
     margin-top: 2rem;
     text-align: center;
+    color: #fff;
+    text-decoration: none;
 }
 
 .footerboks p
 {
     margin-bottom: 0.5rem;
     text-align: center;
+    color: #fff;
+    text-decoration: none;
 }
 
 .aabningstider, .kontakt_info, .adresse
@@ -136,7 +178,7 @@ h1, h2, h3, p
     margin-top: 15rem;
 }
 
-.ur_footer, .telefon_footer, .maps_footer
+.ur_png, .telefon_png, .maps_png
 {
     display: flex;
     justify-content: center;
