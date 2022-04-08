@@ -1,1 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Skaber grid */
+
+/* Hvis columns eller rows ændres skal areas også tilpasses */
+.grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "content1 content1 kontaktformular"
+    "video video video"
+    "priser om-os tilbud"
+    "footer footer footer"
+    ;
+}
+
+/* Giver grid farver så det nemt at se */
+
+.grid div:nth-child(even)
+{
+    background-color: red;
+}
+
+.grid div:nth-child(odd)
+{
+    background-color: green;
+}
+
+/* Definerer længden på div */
+
+.header
+{
+    grid-area: header;
+}
+
+.content1
+{
+    grid-area: content1;
+}
+
+.kontaktformular
+{
+    grid-area: kontaktformular;
+}
+
+.video
+{
+    grid-area: video;
+}
+
+.priser
+{
+    grid-area: priser;
+}
+
+.om-os
+{
+    grid-area: om-os;
+}
+
+.tilbud
+{
+    grid-area: tilbud;
+}
+
+.footer
+{
+    grid-area: footer;
+}
+
+@media screen and (min-width: 736px)
+{
+
+}
