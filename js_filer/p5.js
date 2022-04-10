@@ -1,3 +1,5 @@
+/* NICKLAS */
+
 /* Vælger class "to-top" og laver en constant ved navn toTop */
 const toTop = document.querySelector(".to-top");
 
