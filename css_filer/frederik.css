@@ -15,15 +15,21 @@ body{
 }
 
 .kontakt-sektion{
-  width: 100%;
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 50px;
+  margin-left: 50px;
+  border-radius: 10px;
+  background-color: #AEACA7;
+  opacity: 0.7;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .kontakt-formular{
-  max-width: 700px;
   margin-right: 50px;
+  margin-left: 50px;
 }
 
 .kontakt-formular h1{
@@ -31,58 +37,59 @@ body{
   text-align: center;
   font-size: 35px;
   text-transform: uppercase;
+}
+
+.kontakt-formular h2{
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
   margin-bottom: 30px;
 }
 
-.region, .bolig {
-    color: #000;
-    border: none;
-    width: 30%;
-    padding: 12px;
-    font-size: 15px;
-    border-radius: 5px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    cursor: pointer;
+.kontakt-formular .region, .bolig {
+  background: #fff;
+  color: #707070;
+  border: none;
+  width: 300px;
+  height: 41px;
+  padding: 12px;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .kontakt-formular .tekst-boks{
-  background: #000;
+  background: #fff;
   color: #fff;
   border: none;
-  width: calc(50% - 10px);
-  height: 50px;
+  width: 300px;
+  height: 41px;
   padding: 12px;
-  font-size: 15px;
+  font-size: 12px;
   border-radius: 5px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  opacity: 0.9;
-}
-
-.kontakt-formular .tekst-boks:first-child{
-  margin-right: 15px;
 }
 
 .kontakt-formular textarea{
-  background: #000;
+  background: #fff;
   color: #fff;
   border: none;
-  width: 100%;
+  width: 300px;
   padding: 12px;
-  font-size: 15px;
+  font-size: 12px;
   min-height: 200px;
   max-height: 400px;
   resize: vertical;
   border-radius: 5px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  opacity: 0.9;
 }
 
 .kontakt-formular .send-knap{
-  float: right;
-  background: #2E94E3;
+  background: #91B37F;
   color: #fff;
   border: none;
   width: 120px;
@@ -95,22 +102,23 @@ body{
   cursor: pointer;
   transition: 0.3s;
   transition-property: background;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .kontakt-formular .send-knap:hover{
   background: #0582E3;
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 500px){
   .kontakt-sektion{
     flex-direction: column;
   }
 
-  .kontakt-formular h1{
-    font-size: 30px;
+  .kontakt-formular .tekst-boks{
+    width: 100%;
   }
 
-  .kontakt-formular .tekst-boks{
+  .kontakt-formular .region, .bolig{
     width: 100%;
   }
 }
