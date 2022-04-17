@@ -9,8 +9,6 @@
 
 body{
   min-height: 100vh;
-  background: url(background.jpg) no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,6 +32,18 @@ body{
   font-size: 35px;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+.region, .bolig {
+    color: #000;
+    border: none;
+    width: 30%;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .kontakt-formular .tekst-boks{
@@ -103,32 +113,4 @@ body{
   .kontakt-formular .tekst-boks{
     width: 100%;
   }
-}
-
-/*css for alert messages*/
-
-.alert-success{
-  z-index: 1;
-  background: #D4EDDA;
-  font-size: 18px;
-  padding: 20px 40px;
-  min-width: 420px;
-  position: fixed;
-  right: 0;
-  top: 10px;
-  border-left: 8px solid #3AD66E;
-  border-radius: 4px;
-}
-
-.alert-error{
-  z-index: 1;
-  background: #FFF3CD;
-  font-size: 18px;
-  padding: 20px 40px;
-  min-width: 420px;
-  position: fixed;
-  right: 0;
-  top: 10px;
-  border-left: 8px solid #FFA502;
-  border-radius: 4px;
 }
