@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktformular</title>
+    <link rel="stylesheet" href="../css_filer/frederik.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <script src="../js_filer/frederik.js" defer></script>
+  </head>
+  <body>
+
+    <!--alert messages start
+    <div class="alert-success">
+      <span>Message Sent! Thank you for contacting us.</span>
+    </div>
+    <div class="alert-error">
+      <span>Something went wrong! Please try again.</span>
+    </div>
+    alert messages end-->
+
+    <!--contact section start-->
+    <div class="kontakt-sektion">
+      <div class="kontakt-formular">
+        <h1>Kontakt os</h1>
+        <form class="kontakt" action="" method="post">
+          <select id="region" class="region" required>
+              <option>Vælg Region</option>
+          </select>
+          <select id="bolig" class="bolig" required>
+              <option>Vælg Bolig</option>
+          </select>
+          <input type="text" name="navn" class="tekst-boks" placeholder="Navn" required>
+          <input type="email" name="email" class="tekst-boks" placeholder="Email" required>
+          <textarea name="besked" rows="5" placeholder="Din besked" required></textarea>
+          <input type="submit" name="send" class="send-knap" value="Send">
+        </form>
+      </div>
+    </div>
+    <!--contact section end-->
+
+  </body>
+</html>
