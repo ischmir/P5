@@ -10,7 +10,7 @@ function regionFunction() {
     dropdown1[dropdown1.length] = new Option(regionArray[i], regionArray[i]);
   }
 }
-  regionFunction();
+  regionFunction()
 //Region dropdown slut//
 
 
