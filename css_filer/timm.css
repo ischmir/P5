@@ -80,6 +80,8 @@ nav{
         opacity: 0;
     }
     
+    /* burger ikonet */
+
     .burger{
         margin-left: 65%;
         display: block;
@@ -92,6 +94,8 @@ nav{
     }
 }
 
+/* nav link animation */
+
 @keyframes navlinkfade{
     from{
         opacity: 0;
@@ -102,6 +106,8 @@ nav{
         transform: translateX(0px);
     }
 }
+
+/* Burger menu animation */
 
 .toggle .linie1{
     transform: rotate(-45deg) translate(-5px,6px);
