@@ -10,6 +10,7 @@
   </head>
   <body>
 
+
     <!--Kontaktformular start-->
     <div class="kontakt-sektion">
       <div class="kontakt-formular">
@@ -27,12 +28,16 @@
           <input type="text" name="adresse" class="tekst-boks" placeholder="Adresse" required>
           <textarea name="besked" rows="5" placeholder="Din besked" required></textarea>
           <div class="send-knap2">
-            <input type="submit" name="send" class="send-knap" value="Send">
+            <input onclick="meskedAlert()" type="submit" name="send" class="send-knap" value="Send">
+          </div>
+          <div class="alert" id="alert">
+            Din besked er sendt!
           </div>
         </form>
       </div>
     </div>
     <!--Kontaktformular slut-->
+
 
   </body>
 </html>
