@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tekstområde1
+{
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+&::after{
+content:'';
+position: absolute;
+top:0px;
+right:0px;
+left:0px;
+bottom:0px;
+background-image: url(../Mediefiler/png/baggrundpulvis.png);
+background-size:cover;
+opacity: 0.5;
+}
+
+h1{
+position: relative;
+}
+
+.tekstområde2
+{
+  background: #91B37F;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  margin: 10px;
+}
+.tekstområde3
+{
+  background: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  margin: 10px;
+}

@@ -145,7 +145,7 @@ h1, h2, h3, h4
     flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 10rem;
-    
+
 }
 
 .footerboks
@@ -185,12 +185,12 @@ h1, h2, h3, h4
 }
 
 .kontakt_info p a
-{      
+{
     text-decoration: none;
     color: #fff;
 }
 
-.to-top 
+.to-top
 {
     background: #91B37F;
     position: fixed;
@@ -210,8 +210,8 @@ h1, h2, h3, h4
     transition: all .4s;
     z-index: 1;
 }
-  
-.to-top.active 
+
+.to-top.active
 {
     bottom:32px;
     pointer-events: auto;
