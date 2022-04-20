@@ -19,7 +19,7 @@
     "header header header"
     "content1 content1 kontaktformular"
     "video video video"
-    "priser om-os tilbud"
+    "priser om_pulvis tilbud"
     "footer footer footer"
     ;
 }
@@ -35,12 +35,12 @@ h1, h2, h3, h4
 
 .grid div:nth-child(even)
 {
-    background-color: red;
+    background-color: #91B37F;
 }
 
 .grid div:nth-child(odd)
 {
-    background-color: green;
+    background-color: #91B37F;
 }
 
 /* Definerer længden på div */
@@ -70,9 +70,9 @@ h1, h2, h3, h4
     grid-area: priser;
 }
 
-.om-os
+.om_pulvis
 {
-    grid-area: om-os;
+    grid-area: om_pulvis;
 }
 
 .tilbud
@@ -108,22 +108,20 @@ h1, h2, h3, h4
     justify-content: center;
 }
 
-.priser_png, .om_os_png, .tilbud_png
+.priser_png, .om_pulvis_png, .tilbud_png
 {
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
+    margin-top: 5rem;
 }
 
-.priser
+.om_pulvis p
 {
-    margin-left: 1rem;
+    margin-bottom: 5rem;
+    text-align: center;
 }
 
-.tilbud
-{
-    margin-right: 1rem;
-}
 /* Footer startes */
 
 .footerbg
@@ -134,6 +132,7 @@ h1, h2, h3, h4
     /* Højere brightness = mørkere */
     background-image: url(../Mediefiler/jpeg/img_pulvis.jpg);
     background-repeat: no-repeat;
+
 }
 
 .footerindhold
