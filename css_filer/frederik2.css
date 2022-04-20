@@ -24,7 +24,7 @@ body{
   display: flex;
   justify-content: space-between;
 }
-/* The alert message box */
+
 .hilsen {
   display: flex;
   font-size: 10px;
