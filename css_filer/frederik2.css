@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The alert message box */
+.hilsen {
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.kontakt-sektion{
+  width: 100%;
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: 50px;
+  border-radius: 10px;
+  background-color: rgba(174, 172, 167, 0.6);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.kontakt-formular{
+  max-width: 700px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+h1{
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+h2{
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.region, .bolig {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(112, 112, 112, 1);
+  border: none;
+  min-width: 300px;
+  height: 41px;
+  padding: 12px;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.tekst-boks{
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(112, 112, 112, 1);
+  border: none;
+  min-width: 300px;
+  height: 41px;
+  padding: 12px;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+textarea{
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(112, 112, 112, 1);
+  border: none;
+  width: 100%;
+  min-width: 300px;
+  padding: 12px;
+  font-size: 12px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.send-knap{
+  background-color: rgba(145, 179, 127, 1);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  min-width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.send-knap2 {
+  display: flex;
+  justify-content: center;
+}
+
+.send-knap:hover{
+  background-color: rgba(152, 188, 133, 1);
+}
+
+@media screen and (max-width: 950px){
+  .kontakt-sektion{
+    flex-direction: column;
+  }
+
+.tekst-boks{
+    width: 100%;
+  }
+
+.region, .bolig{
+    width: 100%;
+  }
+}
