@@ -6,7 +6,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "content1 content1 kontaktformular"
+    "video video video"
+    "priser om_pulvis tilbud"
+    "footer footer footer"
+    ;
+}
 /* Timms kode */
 /* MENU CSS DESKTOP START*/
 nav{
@@ -25,8 +37,9 @@ nav{
 .logo{
     color: #fff;
     text-transform: uppercase;
-    margin-left: 30px;
+    margin-left: 15px;
     margin-top: 10px;
+    margin-bottom: 3px;
 }
 
 .logo_svg
@@ -72,6 +85,11 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode:saturation;
+    
+}
+
+.content1{
+    font-family:sans-serif;
 }
 
 /* VIEWPORT = TABLET START*/
@@ -94,7 +112,7 @@ nav{
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #91B37F;
+        background-color: #2b2b2b;
         display: flex;
         flex-direction: column;
         align-items: center;
