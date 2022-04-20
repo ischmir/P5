@@ -1,0 +1,57 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 20px 20px;
+}
+
+h2
+{
+    text-align: center;
+}
+
+.om_pulvis
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.om_pulvis h2
+{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.om_pulvis p
+{
+    display: flex;
+    justify-content: center;
+}
+
+.om_pulvis_png
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: auto;
+}
+
+h2
+{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}

@@ -14,6 +14,15 @@ body{
   align-items: center;
 }
 
+/* The alert message box */
+.hilsen {
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
 .kontakt-sektion{
   width: 400px;
   display: flex;
