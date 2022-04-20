@@ -28,13 +28,18 @@ boligFunction()
 //Bolig dropdown Slut//
 
 //GOD DAG TEKST
-const hour = new Date().getHours();
-let greeting;
+function hilsenfunction() {
 
-if (hour < 18) {
-  greeting = "Besked er modtaget, Hav en god dag!";
-} else {
-  greeting = "Besked er modtaget, Hav en god aften!";
+  const hour = new Date().getHours();
+  let hilsen;
+
+  if (hour < 18) {
+    hilsen = "Tak for at henvende dig til os, hav en god dag!";
+  } else {
+    hilsen = "Tak for at henvende dig til os, hav en god aften";
+  }
+
+  document.getElementById("hilsen").innerHTML = hilsen;
 }
 
-document.getElementById("alert").innerHTML = greeting;
+hilsenfunction()

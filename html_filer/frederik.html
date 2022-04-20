@@ -3,13 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontaktformular</title>
+    <title>Kontakt Pulvis</title>
     <link rel="stylesheet" href="../css_filer/frederik.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <script src="../js_filer/frederik.js" defer></script>
   </head>
   <body>
-
 
     <!--Kontaktformular start-->
     <div class="kontakt-sektion">
@@ -28,16 +27,17 @@
           <input type="text" name="adresse" class="tekst-boks" placeholder="Adresse" required>
           <textarea name="besked" rows="5" placeholder="Din besked" required></textarea>
           <div class="send-knap2">
-            <input onclick="meskedAlert()" type="submit" name="send" class="send-knap" value="Send">
+            <input onclick="alertFunction()" type="submit" name="send" class="send-knap" value="Send">
           </div>
-          <div class="alert" id="alert">
-            Din besked er sendt!
-          </div>
+
+          <!--hilsen start-->
+          <p class="hilsen" id="hilsen"></p>
+          <!--hilsen slut-->
+
         </form>
       </div>
     </div>
     <!--Kontaktformular slut-->
-
 
   </body>
 </html>
