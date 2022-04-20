@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+/* body
+{
+    background: #91B37F;
+} */
+
 /* Skaber grid */
 
 /* Hvis columns eller rows ændres skal areas også tilpasses */
