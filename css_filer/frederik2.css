@@ -7,18 +7,18 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* body{
+body{
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
-/* body{
+body{
   background-image: url("../Mediefiler/svg/cirklerdesk2.svg");
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
 
 .tekst-box2{
   display: flex;
@@ -136,7 +136,7 @@ textarea{
   background-color: rgba(152, 188, 133, 1);
 }
 
-/* @media screen and (max-width: 950px){
+@media screen and (max-width: 950px){
   .kontakt-sektion{
     flex-direction: column;
   }
@@ -148,4 +148,4 @@ textarea{
 .region, .bolig{
     width: 100%;
   }
-} */
+}

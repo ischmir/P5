@@ -2,7 +2,7 @@ console.log("this is working");
 
 //Region dropdown start//
 function regionFunction() {
-  let regionArray = new Array("Nordjylland", "Midtjylland", "Syddanmark", "Sjælland", "Hovedstaden");
+  let regionArray = new Array("Nordjylland", "Midtjylland", "Syddanmark", "Sjællnd", "Hovedstaden");
 
   let dropdown1 = document.getElementById("region");
 
