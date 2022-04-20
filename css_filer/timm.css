@@ -143,3 +143,8 @@ nav{
 }
 /* MENU CSS TABLET SLUT*/
 /* VIEWPORT CSS MOBILE SLUT */
+
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+  }
