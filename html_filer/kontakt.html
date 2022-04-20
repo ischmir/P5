@@ -6,19 +6,21 @@
     <title>Kontakt Pulvis</title>
     <link rel="stylesheet" href="../css_filer/frederik2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <script src="../js_filer/frederik2.js" defer></script>
+    <script src="../js_filer/frederik.js" defer></script>
   </head>
   <body>
 
     <!--Kontaktformular start-->
-    <div class="kontakt-sektion">
-      <div class="kontakt-formular">
+    <div class="kontakt-sektion" class"kontakt-sektion2">
+      <div class="kontakt-formular" class"kontakt-formular2">
         <h1>Kontakt os</h1>
         <h2>Få et uforpligtende tilbud</h2>
         <form class="kontakt" action="" method="post">
-          <div class="tekst-box2">
+          <div class="name-email">
             <input type="text" name="navn" class="tekst-boks" placeholder="Navn" required>
             <input type="email" name="email" class="tekst-boks" placeholder="Email" required>
+          </div>
+          <div class="dropdown3">
             <select id="region" class="region" required>
               <option>Vælg Region</option>
             </select>
@@ -26,8 +28,8 @@
               <option>Vælg Bolig</option>
             </select>
           </div>
-          <input type="text" name="adresse" class="tekst-boks" placeholder="Adresse" required>
-          <textarea name="besked" rows="5" placeholder="Din besked" required></textarea>
+          <input type="text" name="adresse" class="adresse" placeholder="Adresse" required>
+          <textarea class="tekst-område" name="besked" rows="5" placeholder="Din besked" required></textarea>
           <div class="send-knap2">
             <input onclick="alertFunction()" type="submit" name="send" class="send-knap" value="Send">
           </div>
