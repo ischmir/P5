@@ -16,14 +16,16 @@
         <h1>Kontakt os</h1>
         <h2>Få et uforpligtende tilbud</h2>
         <form class="kontakt" action="" method="post">
-          <select id="region" class="region" required>
+          <div class="tekst-box2">
+            <input type="text" name="navn" class="tekst-boks" placeholder="Navn" required>
+            <input type="email" name="email" class="tekst-boks" placeholder="Email" required>
+            <select id="region" class="region" required>
               <option>Vælg Region</option>
-          </select>
-          <select id="bolig" class="bolig" required>
+            </select>
+            <select id="bolig" class="bolig" required>
               <option>Vælg Bolig</option>
-          </select>
-          <input type="text" name="navn" class="tekst-boks" placeholder="Navn" required>
-          <input type="email" name="email" class="tekst-boks" placeholder="Email" required>
+            </select>
+          </div>
           <input type="text" name="adresse" class="tekst-boks" placeholder="Adresse" required>
           <textarea name="besked" rows="5" placeholder="Din besked" required></textarea>
           <div class="send-knap2">
