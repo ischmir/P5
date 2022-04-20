@@ -6,47 +6,102 @@
     padding: 0;
     box-sizing: border-box;
 }
-.tekstområde1
-{
-  justify-content: center;
-  position: relative;
-  align-items: center;
-  display: flex;
-  font-size: 20px;
-  padding: 10px;
-  margin: 10px;
+
+.tekstområde1 p {
+  color:white;
+  padding-left: 10%;
+  padding-top: 20px;
+  padding-right: 10%;
+  text-align: justify;
+}
+
+.tekstområde1 h1 {
+  margin-bottom: 2vh;
+  color:white;
+  margin-left: 10%;
+  margin-right: 10%;
 
 }
 
-&::after{
-content:'';
-position: absolute;
-top:0px;
-right:0px;
-left:0px;
-bottom:0px;
-background-image: url(../Mediefiler/png/baggrundpulvis.png);
-background-size:cover;
-opacity: 0.5;
+.tekstområde1{
+height: 500px;
+font-size: 20px;
+background: rgba(0,0,0,0.5)url(../Mediefiler/png/baggrundpulvis.png);
+background-size: cover;
+background-blend-mode:darken;
 }
 
-h1{
-position: relative;
+.tekstområde2 p{
+  color:white;
+  margin-left: 10%;
+  margin-top: 20px;
+  padding-right:10px;
 }
-
-.tekstområde2
-{
+.tekstområde2 h1 {
+  margin-bottom: 2vh;
+  color:white;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.tekstområde2{
+  height:600px;
+  color: #fff;
   background: #91B37F;
   font-size: 20px;
-  padding: 10px;
   border: 1px solid lightgray;
-  margin: 10px;
+
+
 }
+.tekstområde2 img{
+  float:right;
+}
+
 .tekstområde3
 {
-  background: #fff;
+  height: 600px;
+  color: #707070;
   font-size: 20px;
-  padding: 10px;
   border: 1px solid lightgray;
-  margin: 10px;
+
+}
+.tekstområde3 p{
+  color:#707070;
+  margin-left: 10%;
+  margin-top: 20px;
+  padding-right: 10px;
+}
+
+.tekstområde3 h1 {
+  margin-bottom: 2vh;
+  color:#707070;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.to-top
+{
+    background: #91B37F;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#1f1f1f;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+    z-index: 1;
+}
+
+.to-top.active
+{
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
 }

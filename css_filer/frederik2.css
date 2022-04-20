@@ -24,7 +24,8 @@ body{
 }
 
 .kontakt-sektion{
-  width: 400px;
+  width: 100%;
+  min-width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +37,7 @@ body{
 }
 
 .kontakt-formular{
+  max-width: 700px;
   margin-right: 50px;
   margin-left: 50px;
 }
@@ -58,7 +60,7 @@ h2{
   background-color: rgba(255, 255, 255, 1);
   color: rgba(112, 112, 112, 1);
   border: none;
-  width: 300px;
+  min-width: 300px;
   height: 41px;
   padding: 12px;
   font-size: 12px;
@@ -72,7 +74,7 @@ h2{
   background-color: rgba(255, 255, 255, 1);
   color: rgba(112, 112, 112, 1);
   border: none;
-  width: 300px;
+  min-width: 300px;
   height: 41px;
   padding: 12px;
   font-size: 12px;
@@ -85,7 +87,8 @@ textarea{
   background-color: rgba(255, 255, 255, 1);
   color: rgba(112, 112, 112, 1);
   border: none;
-  width: 300px;
+  width: 100%;
+  min-width: 300px;
   padding: 12px;
   font-size: 12px;
   min-height: 200px;
@@ -100,7 +103,7 @@ textarea{
   background-color: rgba(145, 179, 127, 1);
   color: rgba(255, 255, 255, 1);
   border: none;
-  width: 120px;
+  min-width: 120px;
   height: 40px;
   font-size: 15px;
   font-weight: 600;
@@ -123,7 +126,7 @@ textarea{
   background-color: rgba(152, 188, 133, 1);
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 950px){
   .kontakt-sektion{
     flex-direction: column;
   }
