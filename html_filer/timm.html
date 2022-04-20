@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="../css_filer/timm.css">
         <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
         <script src="../js_filer/timm.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <script src="../js_filer/frederik.js" defer></script>
     </head>
     <body>
         <div class="grid">
@@ -39,7 +41,6 @@
                         </nav>
                     </header>
                     <div class="content1">
-                        <br><br><br><br>
                         <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
                         <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
                         <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
@@ -51,13 +52,36 @@
                         <p>lorem ipsum</p>
                         <p>lorem ipsum</p>
                         <p>lorem ipsum</p>
-                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                     </div>
                     <div class="kontaktformular">
-                        hej
+                    <!--Kontaktformular start-->
+                        <div class="kontakt-sektion">
+                            <div class="kontakt-formular">
+                                <h1>Kontakt os</h1>
+                                <h2>Få et uforpligtende tilbud</h2>
+                                <form class="kontakt" action="" method="post">
+                                    <select id="region" class="region" required>
+                                        <option>Vælg Region</option>
+                                    </select>
+                                    <select id="bolig" class="bolig" required>
+                                        <option>Vælg Bolig</option>
+                                    </select>
+                                    <input type="text" name="navn" class="tekst-boks" placeholder="Navn" required>
+                                    <input type="email" name="email" class="tekst-boks" placeholder="Email" required>
+                                    <input type="text" name="adresse" class="tekst-boks" placeholder="Adresse" required>
+                                    <textarea name="besked" rows="5" placeholder="Din besked" required></textarea>
+                                    <div class="send-knap2">
+                                        <input onclick="alertFunction()" type="submit" name="send" class="send-knap" value="Send">
+                                    </div>
+                                    <!--hilsen start-->
+                                    <p class="hilsen" id="hilsen"></p>
+                                    <!--hilsen slut-->
+                                </form>
+                            </div>
+                        </div>
+                        <!--Kontaktformular slut-->
                     </div>
                 </div>
-
             <main>
                 <div class="Rydning-af-dodsbo">Rydning Af Dødsbo</div>
                 <div class="kontakt">Kontakt</div>
