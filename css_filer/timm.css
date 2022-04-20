@@ -7,218 +7,114 @@
     box-sizing: border-box;
 }
 
-/* Skaber grid */
+/* Timms kode */
 
-/* Hvis columns eller rows ændres skal areas også tilpasses */
-.grid
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "header header header"
-    "content1 content1 kontaktformular"
-    "video video video"
-    "priser om-os tilbud"
-    "footer footer footer"
-    ;
-}
-
-/* Definere farve på alle headers og paragrafer */
-
-h1, h2, h3, h4
-{
-    text-align: center;
-}
-
-/* Giver grid farver så det nemt at se */
-
-.grid div:nth-child(even)
-{
-    background-color: red;
-}
-
-.grid div:nth-child(odd)
-{
-    background-color: green;
-}
-
-/* Definerer længden på div */
-
-.header
-{
-    grid-area: header;
-}
-
-.content1
-{
-    grid-area: content1;
-}
-
-.kontaktformular
-{
-    grid-area: kontaktformular;
-}
-
-.videoplayer
-{
-    grid-area: video;
-}
-
-.priser
-{
-    grid-area: priser;
-}
-
-.om-os
-{
-    grid-area: om-os;
-}
-
-.tilbud
-{
-    grid-area: tilbud;
-}
-
-.footer
-{
-    grid-area: footer;
-}
-
-/* Grid afsluttes */
-
-.tre_bokse
-{
+nav{
     display: flex;
-    flex-direction: column;
-}
-
-.tre_bokse h2
-{
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    text-align: center;
-    color: #000;
-    text-decoration: none;
-}
-
-.tre_bokse p
-{
-    display: flex;
-    justify-content: center;
-}
-
-.priser_png, .om_os_png, .tilbud_png
-{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-.priser
-{
-    margin-left: 1rem;
-}
-
-.tilbud
-{
-    margin-right: 1rem;
-}
-/* Footer startes */
-
-.footerbg
-{
-    background-size: 100% 100vh;
-    object-fit: cover;
-    filter: brightness(.5);
-    /* Højere brightness = mørkere */
-    background-image: url(../Mediefiler/jpeg/img_pulvis.jpg);
-    background-repeat: no-repeat;
-}
-
-.footerindhold
-{
-    width: 80%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-top: 10rem;
-    
-}
-
-.footerboks
-{
-    display: flex;
-    flex-direction: column;
-    margin-right: 4rem;
-    margin-left: 4rem;
-}
-
-.footerboks h2
-{
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-}
-
-.footerboks p
-{
-    margin-bottom: 0.5rem;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-}
-
-.aabningstider, .kontakt_info, .adresse
-{
-    margin-top: 15rem;
-}
-
-.ur_png, .telefon_png, .maps_png
-{
-    display: flex;
-    justify-content: center;
-}
-
-.kontakt_info p a
-{      
-    text-decoration: none;
-    color: #fff;
-}
-
-.to-top 
-{
-    background: #91B37F;
-    position: fixed;
-    bottom: 16px;
-    right:32px;
-    width:50px;
-    height:50px;
-    border-radius: 50%;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    font-size:32px;
-    color:#1f1f1f;
+    min-height: 8vh;
+    background-color:#91B37F;
+    font-family: 'poppins',sans-serif;
+    color: fff;
+}
+
+.logo{
+    color: #fff;
+    text-transform: uppercase;
+    margin: 30px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%; 
+}
+
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: #fff;
     text-decoration: none;
-    opacity:0;
-    pointer-events: none;
-    transition: all .4s;
-    z-index: 1;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
 }
-  
-.to-top.active 
-{
-    bottom:32px;
-    pointer-events: auto;
-    opacity:1;
+.burger {
+    display: none;
 }
 
-@media screen and (min-width: 736px)
-{
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+@media screen and (max-width: 1080px) {
+    .nav-links{
+        width: 65%;
+    }
+}
 
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #91B37F;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .nav-links li{
+        opacity: 0;
+    }
+    
+    /* burger ikonet */
+
+    .burger{
+        margin-left: 65%;
+        display: block;
+        cursor: pointer;
+        margin: 20px;
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+    }
+}
+
+/* nav link animation */
+
+@keyframes navlinkfade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* Burger menu animation */
+
+.toggle .linie1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .linie2{
+    opacity: 0;
+}
+.toggle .linie3{
+    transform: rotate(45deg) translate(-5px,-6px);
 }
