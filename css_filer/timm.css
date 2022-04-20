@@ -5,21 +5,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
-.grid
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "header header header"
-    
-    "video video video"
-    "priser om_pulvis tilbud"
-    "footer footer footer"
-    
-    ;
-}
+
 /* Timms kode */
 /* MENU CSS DESKTOP START*/
 nav{
@@ -87,23 +75,23 @@ nav{
     background-size: cover;
     background-blend-mode:saturation;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    
+    
 }
 
 .content1{
     padding-top: 100px;
-    width: 66.6%;
+    width: 50%;
     font-family:sans-serif;
     font-size: 14px;
 
 }
 
 .kontaktformular{
-    width: 33.3%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin: 10%;
+    justify-content: center;
+    
 }
 
 
@@ -121,16 +109,15 @@ nav{
   }
   
   .kontakt-sektion{
-    width: 100%;
-    min-width: 400px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 200px;
-    margin-left: 200px;
-    border-radius: 10px;
-    background-color: rgba(174, 172, 167, 0.6);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: 50px;
+  border-radius: 10px;
+  background-color: rgba(174, 172, 167, 0.6);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   }
   
   .kontakt-formular{
@@ -154,7 +141,7 @@ nav{
     background-color: rgba(255, 255, 255, 1);
     color: rgba(112, 112, 112, 1);
     border: none;
-    min-width: 300px;
+    min-width: 200px;
     height: 41px;
     padding: 12px;
     font-size: 12px;
@@ -168,7 +155,7 @@ nav{
     background-color: rgba(255, 255, 255, 1);
     color: rgba(112, 112, 112, 1);
     border: none;
-    min-width: 300px;
+    min-width: 200px;
     height: 41px;
     padding: 12px;
     font-size: 12px;
@@ -182,7 +169,7 @@ nav{
     color: rgba(112, 112, 112, 1);
     border: none;
     width: 100%;
-    min-width: 300px;
+    min-width: 200px;
     padding: 12px;
     font-size: 12px;
     min-height: 200px;
