@@ -20,13 +20,14 @@
   color:white;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top
 
 }
 
 .tekstområde1{
 height: 500px;
 font-size: 20px;
-background: rgba(0,0,0,0.5)url(../Mediefiler/png/baggrundpulvis.png);
+background: rgba(0,0,0,0.5)url(../mediefiler/png/baggrundpulvis.png);
 background-size: cover;
 background-blend-mode:darken;
 }
@@ -42,6 +43,7 @@ background-blend-mode:darken;
   color:white;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 1vh;
 }
 .tekstområde2{
   height:600px;
@@ -76,8 +78,20 @@ background-blend-mode:darken;
   color:#707070;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 1vh;
 }
 
+.tekstområde3 h2 {
+  margin-bottom: 2vh;
+  color:#707070;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-weight: bold;
+
+}
+
+
+}
 .to-top
 {
     background: #91B37F;
