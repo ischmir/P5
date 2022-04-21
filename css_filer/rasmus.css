@@ -12,15 +12,18 @@
   padding-left: 10%;
   padding-top: 20px;
   padding-right: 10%;
-  text-align: justify;
+  text-align:justify;
 }
 
 .tekstområde1 h1 {
   margin-bottom: 2vh;
   color:white;
   margin-left: 10%;
-  margin-right: 10%;
-  margin-top
+  margin-right: 50%;
+}
+.tekststyle{
+  width: 90%;
+  margin-top: 15vh;
 
 }
 
@@ -30,6 +33,9 @@ font-size: 20px;
 background: rgba(0,0,0,0.5)url(../mediefiler/png/baggrundpulvis.png);
 background-size: cover;
 background-blend-mode:darken;
+display: flex;
+justify-content: space-around;
+
 }
 
 .tekstområde2 p{
@@ -43,19 +49,33 @@ background-blend-mode:darken;
   color:white;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 1vh;
+  margin-top: 145px;
+}
+
+.container2{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background: #91B37F;
+
 }
 .tekstområde2{
   height:600px;
   color: #fff;
-  background: #91B37F;
   font-size: 20px;
-  border: 1px solid lightgray;
-
 
 }
-.tekstområde2 img{
-  float:right;
+
+.tekstområde2 p
+{
+  width: 500px;
+}
+
+
+.tekstområde2_img{
+  display:flex;
+  justify-content: center;
+  margin-top: 35px;
 }
 
 .tekstområde3
@@ -63,7 +83,9 @@ background-blend-mode:darken;
   height: 600px;
   color: #707070;
   font-size: 20px;
-  border: 1px solid lightgray;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8vh;
 
 }
 .tekstområde3 p{
@@ -118,4 +140,10 @@ background-blend-mode:darken;
     bottom:32px;
     pointer-events: auto;
     opacity:1;
+}
+
+@media screen and (max-width: 1080px) {
+  .container2 {
+    flex-direction: column;
+  }
 }
