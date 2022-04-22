@@ -22,9 +22,9 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "header header header"
-    "content1 content1 kontaktformular"
-    "video video video"
     "priser om_pulvis tilbud"
+    "video video video"
+    "content1 content1 kontaktformular"
     "footer footer footer"
     ;
 }
@@ -38,7 +38,7 @@ h1, h2, h3, h4
 
 /* Giver grid farver så det nemt at se */
 
-.grid div:nth-child(even)
+/* .grid div:nth-child(even)
 {
     background-color: #91B37F;
 }
@@ -46,7 +46,7 @@ h1, h2, h3, h4
 .grid div:nth-child(odd)
 {
     background-color: #91B37F;
-}
+} */
 
 /* Definerer længden på div */
 
@@ -91,6 +91,226 @@ h1, h2, h3, h4
 }
 
 /* Grid afsluttes */
+
+
+/* Timms kode */
+/* MENU CSS DESKTOP START*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    background-color:#2B2B2B;
+    font-family: 'poppins',sans-serif;
+    color: fff;
+    width: 100%;
+    position: absolute;
+    background: rgba(43,43,43, 0.6)
+}
+
+.logo{
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.logo_svg
+{
+    z-index: 100;
+    width:200px;
+    height:50px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%; 
+}
+
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.burger {
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+/* MENU CSS DESKTOP SLUT*/
+
+/* FORSIDE CSS DESKTOP START */
+
+.forside {
+    background: rgba(43,43,43, 0.6) url(../mediefiler/jpeg/img_pulvis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:saturation;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.content1{
+    margin-top: 120px;
+    font-family:sans-serif;
+    font-size: 14px;
+}
+
+.forside-tekst{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.content1 p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 200%;
+}
+
+
+.kontaktformular{
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.tekst-box2{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hilsen {
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .kontakt-sektion{
+    display: flex;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: 50px;
+  border-radius: 10px;
+  background-color: rgba(43,43,43, 0.6);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kontakt-formular{
+      width: 75%;
+  }
+  
+  .kontaktformular h1{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .kontaktformular h2{
+    text-align: center;
+  }
+  h1{
+    color: rgba(255, 255, 255, 1);
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+  
+  h2{
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  .region, .bolig {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(112, 112, 112, 1);
+    border: none;
+    width: 300px;
+    height: 41px;
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .tekst-boks{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(112, 112, 112, 1);
+    border: none;
+    min-width: 300px;
+    height: 41px;
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  textarea{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(112, 112, 112, 1);
+    border: none;
+    width: 100%;
+    min-width: 300px;
+    padding: 12px;
+    font-size: 12px;
+    min-height: 75px;
+    max-height: 200px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .send-knap{
+    background-color: rgba(145, 179, 127, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    min-width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .send-knap2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .send-knap:hover{
+    background-color: rgba(152, 188, 133, 1);
+  }
 
 .tre_bokse
 {
@@ -177,9 +397,9 @@ h1, h2, h3, h4
     text-decoration: none;
 }
 
-.aabningstider, .kontakt_info, .adresse
+.aabningstider, .adresse
 {
-    margin-top: 15rem;
+    margin-top: 18.75rem;
 }
 
 .ur_png, .telefon_png, .maps_png
@@ -192,6 +412,29 @@ h1, h2, h3, h4
 {
     text-decoration: none;
     color: #fff;
+}
+
+.soMe_icons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.facebook_png
+{
+        margin-right: 1.5rem;
+}
+
+.instagram_png
+{
+    margin-left: 1.5rem;
+}
+
+.copyright
+{
+    margin-top: 5rem;
 }
 
 .to-top
@@ -222,7 +465,86 @@ h1, h2, h3, h4
     opacity:1;
 }
 
-@media screen and (min-width: 736px)
-{
+/* VIEWPORT = TABLET START*/
 
-}
+@media screen and (max-width: 1080px) {
+    /* MENU CSS TABLET START*/
+        .nav-links{
+            width: 65%;
+        }
+    
+        .forside{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    /* MENU CSS TABLET SLUT*/
+    /* VIEWPORT CSS MOBILE START */
+    @media screen and (max-width: 768px) {
+    /* MENU CSS MOBILE START*/
+        body{
+            overflow-x: hidden;
+        }
+        .nav-links{
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            background-color:rgb(43,43,43);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 75%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .nav-links li{
+            opacity: 0;
+        }
+        
+        /* burger ikonet */
+    
+        .burger{
+            margin-left: 65%;
+            display: block;
+            cursor: pointer;
+            margin: 20px;
+        }
+    
+        .nav-active{
+            transform: translateX(0%);
+        }
+    }
+    
+    /* nav link animation */
+    
+    @keyframes navlinkfade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    
+    /* Burger menu animation */
+    
+    .toggle .linie1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .toggle .linie2{
+        opacity: 0;
+    }
+    .toggle .linie3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+    /* MENU CSS TABLET SLUT*/
+    /* VIEWPORT CSS MOBILE SLUT */
+    
+    .resize-animation-stopper * {
+        animation: none !important;
+        transition: none !important;
+      }

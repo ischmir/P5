@@ -73,7 +73,7 @@ nav{
     background: rgba(43,43,43, 0.6) url(../mediefiler/jpeg/img_pulvis.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode:saturation;
+    background-blend-mode: saturation;
     display: flex;
     flex-direction: row;
     
