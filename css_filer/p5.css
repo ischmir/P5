@@ -29,24 +29,12 @@
     ;
 }
 
-/* Definere farve på alle headers og paragrafer */
+/* Definerer farve på alle headers og paragrafer */
 
 h1, h2, h3, h4
 {
     text-align: center;
 }
-
-/* Giver grid farver så det nemt at se */
-
-/* .grid div:nth-child(even)
-{
-    background-color: #91B37F;
-}
-
-.grid div:nth-child(odd)
-{
-    background-color: #91B37F;
-} */
 
 /* Definerer længden på div */
 
@@ -368,7 +356,7 @@ nav{
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-top: 10rem;
+    margin-top: 150px;
 
 }
 
@@ -376,8 +364,8 @@ nav{
 {
     display: flex;
     flex-direction: column;
-    margin-right: 4rem;
-    margin-left: 4rem;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 
 .footerboks h2
@@ -457,6 +445,154 @@ nav{
     transition: all .4s;
     z-index: 1;
 }
+
+/* SLIDER */
+
+.card
+{
+    margin-top: 150px;
+}
+
+.card-content
+{
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    background: red;
+    border-radius: 10px;
+    margin: 0 auto;
+        
+    /* From https://css.glass */
+    background: rgba(145, 179, 127, 0.34);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+    border: 1px solid rgba(145, 179, 127, 1);
+
+    box-shadow: 8px 8px 29px -5px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 8px 8px 29px -5px rgba(0,0,0,0.56);
+    -moz-box-shadow: 8px 8px 29px -5px rgba(0,0,0,0.56);
+}
+
+.ratingPicture
+{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    padding: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ratingImg
+{
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    
+    box-shadow: 8px 8px 29px -5px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 8px 8px 29px -5px rgba(0,0,0,0.56);
+    -moz-box-shadow: 8px 8px 29px -5px rgba(0,0,0,0.56);
+}
+
+.ratingTitle
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    font-size: 20px;
+}
+
+.ratingName h3
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.ratingDescription
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.ratings
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.ratingStars
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.helper
+{
+    display: inline-block;
+    vertical-align: middle;
+    height: 30%;
+    width: 100%;
+}
+
+.fa-star
+{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.ratingStars p
+{
+    margin-right: 5%;
+}
+
+.checked
+{
+    color: #1C5D99;
+}
+
+.dot 
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 1%;
+}
+
+.active, .dot:hover 
+{
+    background-color: #91B37F;
+}
+
+/* Slideshow container */
+.slideshow-container 
+{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
 
 .to-top.active
 {
