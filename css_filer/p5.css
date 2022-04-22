@@ -92,6 +92,48 @@ h1, h2, h3, h4
 
 /* Grid afsluttes */
 
+/* tekst og tekstbeholdere på om-pulvis siden */
+
+.trexinfo{
+    width: 100%;
+}
+
+.trexinfo1{
+    background-color: #91B37F;
+    width: 100%;
+}
+
+.trexinfo1 h2{
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+
+}
+.trexinfo h2{
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+
+}
+
+.trexinfo1 p{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.trexinfo p{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Billeder på om-pulvis siden */
+.om-os-billede{
+    width: 100vw;
+}
+
+.om-os-billede img{
+    width: 100%;
+}
+
+
+
 .tre_bokse
 {
     display: flex;
@@ -117,8 +159,8 @@ h1, h2, h3, h4
 {
     display: flex;
     justify-content: center;
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    padding-top: 7vh;
+    
 }
 
 .om_pulvis p
