@@ -7,6 +7,12 @@
     box-sizing: border-box;
 }
 
+body
+{
+    background-image: url("../Mediefiler/svg/cirklerdesk2.svg");
+    
+}
+
 /* Skaber grid */
 
 /* Hvis columns eller rows ændres skal areas også tilpasses */
