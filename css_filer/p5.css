@@ -7,11 +7,6 @@
     box-sizing: border-box;
 }
 
-/* body
-{
-    background: #91B37F;
-} */
-
 /* Skaber grid */
 
 /* Hvis columns eller rows ændres skal areas også tilpasses */
@@ -19,12 +14,11 @@
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
     "header header header"
     "priser om_pulvis tilbud"
     "video video video"
-    "content1 content1 kontaktformular"
     "footer footer footer"
     ;
 }
@@ -43,21 +37,6 @@ h1, h2, h3, h4
     grid-area: header;
 }
 
-.content1
-{
-    grid-area: content1;
-}
-
-.kontaktformular
-{
-    grid-area: kontaktformular;
-}
-
-.videoplayer
-{
-    grid-area: video;
-}
-
 .priser
 {
     grid-area: priser;
@@ -71,6 +50,11 @@ h1, h2, h3, h4
 .tilbud
 {
     grid-area: tilbud;
+}
+
+.video
+{
+    grid-area: video;
 }
 
 .footer
@@ -139,6 +123,53 @@ nav{
     transition: all 0.3s ease;
 }
 /* MENU CSS DESKTOP SLUT*/
+
+/* SCROLL ANIMATION */
+
+@keyframes scroll_2 
+{
+    0%   { transform: translateY(0); opacity: 1; }
+    25%  { opacity: 1; }
+    75%  { transform: translateY(.75em); opacity: 0; }
+    100% { transform: translateY(0); opacity: 0; }
+}
+
+.scroll-icon__dot 
+{
+    display: block;
+    position: absolute;
+    left: 50%;
+    background: #91B37F;
+    height: .5em;
+    width: .5em;
+    top: .6em;
+    margin-left: -.25em;
+    border-radius: 50%;
+    transform-origin: top center;
+    backface-visibility: hidden;
+    animation: scroll_2 2s ease-out infinite;
+}
+  
+.scroll-icon 
+{
+    display: block;
+    position: relative;
+    height: 3em;
+    width: 1.5em;
+    border: .25em solid #91B37F;
+    border-radius: 1rem;
+}
+
+
+.scroll_animation 
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-150%);
+}
 
 /* FORSIDE CSS DESKTOP START */
 
@@ -304,6 +335,7 @@ nav{
 {
     display: flex;
     flex-direction: column;
+    margin-top: 120px;
 }
 
 .tre_bokse h2
@@ -340,12 +372,19 @@ nav{
 .footerbg
 {
     background-size: 100% 100vh;
-    object-fit: cover;
-    filter: brightness(.5);
-    /* Højere brightness = mørkere */
-    background-image: url(../Mediefiler/jpeg/img_pulvis.jpg);
     background-repeat: no-repeat;
+    background: rgba(43,43,43, 0.6) url(../mediefiler/jpeg/img_pulvis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: saturation;
+    display: flex;
+    flex-direction: row;
+    margin-top: 12%;
+}
 
+.footer img
+{
+    transform: translateY(-2rem);
 }
 
 .footerindhold
@@ -407,7 +446,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 4rem;
 }
 
 .facebook_png
@@ -591,6 +630,7 @@ nav{
     max-width: 1000px;
     position: relative;
     margin: auto;
+    
 }
   
 
