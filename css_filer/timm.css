@@ -10,6 +10,9 @@
 
 /* Timms kode */
 /* MENU CSS DESKTOP START*/
+p{
+    color: #333;
+}
 
 nav{
     display: flex;

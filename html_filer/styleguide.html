@@ -37,21 +37,26 @@
                 <p>font-family: Poppins</p>
                 <p>font-weight: (700)bold</p>
                 <p>font-size: 35px</p>
+                <p>color: #fff</p>
                 <br>
                 <h2>h2: Butik Pulvis</h2>
                 <p>font-family: Poppins</p>
                 <p>font-weight: (600)semibold</p>
-                <p>font-size: 25px</p>
+                <p>font-size: 25px
+                <p>color: #fff</p>
+                </p>
                 <br>
                 <h3>h3: Butik Pulvis</h3>
                 <p>font-family: Poppins</p>
                 <p>font-weight: (600)semibold</p>
                 <p>font-size: 16px</p>
+                <p>color: #fff</p>
                 <br>
                 <p>p: Butik Pulvis</p>
                 <p>font-family: Poppins</p>
                 <p>font-weight: (400)normal</p>
                 <p>font-size: 16px</p>
+                <p>color: #fff & #333</p>
                 <br><br>
             </div>
         </div>
@@ -61,12 +66,38 @@
             </h1>
             <div class="sg-exampel">
                 <br><br>
-                <h2>Primær</h2>
-                <button class="send">send</button>
-                <h2>Svæver henover (Hover)</h2>
-                <button class="send">send</button>
-                <h2>Udvalgt</h2>
-                <button class="send">send</button>
+                <h2>Send Knap</h2>
+                <div class="send-knap2">
+                    <input onclick="alertFunction()" type="submit" name="send" class="send-knap" value="Send">
+                  </div>
+                  <br>
+                  <h2>Eksempel Kode</h2>
+                  <br>
+                  <p>
+                    .send-knap{ <br>
+                    background-color: rgba(145, 179, 127, 1); <br>
+                    color: rgba(255, 255, 255, 1); <br>
+                    border: none; <br>
+                    width: 120px; <br>
+                    height: 40px; <br>
+                    font-size: 15px; <br>
+                    font-weight: 600; <br>
+                    text-transform: uppercase; <br>
+                    letter-spacing: 2px; <br>
+                    border-radius: 5px; <br>
+                    cursor: pointer; <br>
+                    transition: 0.3s; <br>
+                    transition-property: background; <br>
+                    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); <br>
+                    margin-bottom: 20px; <br>
+                    } <br>
+                </p>
+                <br>
+                <p>
+                    .send-knap:hover{ <br>
+                    background-color: rgba(152, 188, 133, 1); <br>
+                    } <br>
+                </p>
                 <br><br>
             </div>
         </div>
@@ -74,13 +105,54 @@
             <h1>
                 Ikoner
             </h1>
-            <div class="sg-exampel"></div>
+            <div class="sg-exampel">
+                <section class="scroll-animation">
+                    <span class="scroll-icon">
+                        <span class="scroll-icon_dot"></span>
+                    </span>
+                </section>
+                <a href="#" class="to-top active">
+                    <i class="fas fa-chevron-up" aria aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
         <div class="sg-inputfelter">
             <h1>
                 Inputfelter
             </h1>
-            <div class="sg-exampel"></div>
+            <div class="sg-exampel">
+            <br><br>
+                <!--Kontaktformular start-->
+    <div class="kontakt-sektion" class"kontakt-sektion2">
+          <form class="kontakt" action="" method="post">
+            <div class="name-email">
+              <input type="text" name="navn" class="tekst-boks" placeholder="Navn" required>
+              <input type="email" name="email" class="tekst-boks" placeholder="Email" required>
+            </div>
+            <div class="dropdown3">
+              <select id="region" class="region" required>
+                <option>Vælg Region</option>
+                <option>Syddanmark</option>
+                <option>Midtjylland</option>
+                <option>Nordjylland</option>
+                <option>Sjælland</option>
+                <option>Hovedstaden</option>
+              </select>
+              <select id="bolig" class="bolig" required>
+                <option>Vælg Bolig</option>
+              </select>
+            </div>
+            <input type="text" name="adresse" class="adresse" placeholder="Adresse" required>
+            <textarea class="tekst-område" name="besked" rows="5" placeholder="Din besked" required></textarea>
+  
+            <!--hilsen start-->
+            <p class="hilsen" id="hilsen"></p>
+            <!--hilsen slut-->
+  
+          </form>
+      </div>
+      <!--Kontaktformular slut-->
+            </div>
         </div>
 
     </main>

@@ -36,6 +36,7 @@ h1, h2, h3, h4
     text-align: center;
 }
 
+
 /* Giver grid farver så det nemt at se */
 
 .grid div:nth-child(even)

@@ -1,6 +1,7 @@
-.sg-body{
+.body .sg-body{
     background-color: white;
     background-image: none;
+    display: none;
 }
 .sg-logo { grid-area: sg-logo; }
 .sg-fonts { grid-area: sg-fonts; }
@@ -54,8 +55,24 @@
     border-color: #fff;
     height: 100%;
 }
-.sg-exampel h1, h2, h3, p, button{
+.sg-exampel h1, h2, h3, p, a{
     margin-bottom: 0;
     text-align: start;
     margin-left: 10%;
+    position: relative;
+}
+.sg-exampel .send-knap:hover{
+    background-color: rgba(152, 188, 133, 1);
+}
+
+.sg-exampel input{
+    margin-top: 0;
+}
+.sg-exampel textarea{
+    width: 50%;
+}
+.sg-exampel .kontakt-sektion{
+    background-color: rgb(112, 112, 112);
+    align-items: center;
+    box-shadow: none;
 }
