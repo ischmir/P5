@@ -16,7 +16,20 @@ body
 /* Skaber grid */
 
 /* Hvis columns eller rows ændres skal areas også tilpasses */
-.grid
+.grid_index
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "priser om_pulvis tilbud"
+    "video video video"
+    "footer footer footer"
+    ;
+}
+
+.grid_doesbo
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -34,6 +47,11 @@ body
 h1, h2, h3, h4
 {
     text-align: center;
+}
+
+p
+{
+    font-size: 20px;
 }
 
 /* Definerer længden på div */
@@ -186,8 +204,6 @@ nav{
     background-blend-mode:saturation;
     display: flex;
     flex-direction: row;
-    
-    
 }
 
 .content1{
@@ -199,6 +215,11 @@ nav{
 .forside-tekst{
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.forside-tekst-om-pulvis
+{
+    margin-bottom: 100%;
 }
 
 .content1 p{
@@ -359,6 +380,12 @@ nav{
     justify-content: center;
 }
 
+.om_pulvis_tekst, .priser_tekst, .tilbud_tekst
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .priser_png, .om_pulvis_png, .tilbud_png
 {
     display: flex;
@@ -452,7 +479,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 12rem;
 }
 
 .facebook_png
@@ -502,8 +529,8 @@ nav{
 {
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 550px;
     background: red;
     border-radius: 10px;
     margin: 0 auto;
@@ -529,12 +556,13 @@ nav{
     padding: 3px;
     margin-left: auto;
     margin-right: auto;
+    transform: translateY(-1.5rem);
 }
 
 .ratingImg
 {
-    height: 90px;
-    width: 90px;
+    height: 120px;
+    width: 120px;
     object-fit: cover;
     border-radius: 50%;
     display: inline-block;
@@ -543,6 +571,8 @@ nav{
     box-shadow: 8px 8px 29px -5px rgba(0,0,0,0.56);
     -webkit-box-shadow: 8px 8px 29px -5px rgba(0,0,0,0.56);
     -moz-box-shadow: 8px 8px 29px -5px rgba(0,0,0,0.56);
+
+    transform: translateX(-1.20rem);
 }
 
 .ratingTitle
@@ -550,8 +580,14 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 20px;
+}
+
+.ratingTitle h2
+{
+    color: #000;
+    font-size: 30px;
 }
 
 .ratingName h3
@@ -560,6 +596,7 @@ nav{
     align-items: center;
     justify-content: center;
     margin-top: 5%;
+    transform: translateY(3rem);
 }
 
 .ratingDescription
@@ -567,9 +604,15 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
     font-size: 15px;
     text-align: center;
+    transform: translateY(5rem);
+}
+
+.ratingDescription p
+{
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .ratings
@@ -586,6 +629,7 @@ nav{
     align-items: center;
     justify-content: center;
     margin-top: 10%;
+    transform: translatey(10rem);
 }
 
 .helper
@@ -638,13 +682,120 @@ nav{
     margin: auto;
     
 }
-  
 
 .to-top.active
 {
     bottom:32px;
     pointer-events: auto;
     opacity:1;
+}
+
+
+.tekstområde1 p {
+    color:white;
+    padding-left: 11%;
+    padding-top: 20px;
+    padding-right: 10%;
+    text-align:justify;
+}
+
+.tekstområde1 h1 {
+    margin-bottom: 2vh;
+    color:white;
+    margin-left: 11%;
+    margin-right: 50%;
+}
+
+.tekststyle{
+    width: 90%;
+    margin-top: 10vh;
+
+}
+/* baggrundsbillede til tekstområde 1, hvor der er tilføjet opacity */
+.tekstområde1{
+    height: 500px;
+    font-size: 20px;
+    background: rgba(0,0,0,0.5)url(../mediefiler/png/baggrundpulvis.png);
+    background-size: cover;
+    background-blend-mode:darken;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.tekstområde2 p{
+    color:white;
+    margin-left: 10%;
+    margin-top: 20px;
+    padding-right:10px;
+}
+
+.tekstområde2 h1 {
+    margin-bottom: 2vh;
+    color:white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 145px;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background: #91B37F;
+
+}
+.tekstområde2{
+    height:600px;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.tekstområde2 p
+{
+    width: 500px;
+}
+
+.tekstområde2_img{
+    display:flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.tekstområde3
+{
+    height: 600px;
+    color: #707070;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vh;
+}
+
+.tekstområde3 p{
+    color:#707070;
+    margin-left: 10%;
+    margin-top: 20px;
+    padding-right: 10px;
+    text-align:justify;
+}
+
+.tekstområde3 h1 {
+    margin-bottom: 2vh;
+    color:#707070;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1vh;
+}
+
+.tekstområde3 h2 {
+    margin-bottom: 2vh;
+    color:#707070;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: bold;
+
 }
 
 /* VIEWPORT = TABLET START*/

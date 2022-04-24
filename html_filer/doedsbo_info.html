@@ -4,62 +4,207 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontaktformular</title>
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
     <link rel="stylesheet" href="../css_filer/rasmus.css">
+    <link rel="stylesheet" href="../css_filer/p5.css">
+    <script src="../js_filer/p5.js" defer></script>
   </head>
   <body>
+    <div class="header">
+          <div class="forside">
+              <header>
+                  <nav>
+                      <div class="logo">
+                          <img src="../mediefiler/svg/pulvis-logo.svg" class="logo_svg" alt="Pulvis Logo">
+                      </div>
+                      <ul class="nav-links">
+                          <li>
+                              <a href="../html_filer/index.html">Forside</a>
+                          </li>
+                          <li>
+                              <a href="../html_filer/doedsbo_info.html">Rydning af Dødsbo</a>
+                          </li>
+                          <li>
+                              <a href="../html_filer/om_pulvis.html">Om Pulvis</a>
+                          </li>
+                          <li>
+                              <a href="../html_filer/kontakt.html">Kontakt</a>
+                          </li>
+                      </ul>
+                      <div class="burger">
+                          <div class="linie1"></div>
+                          <div class="linie2"></div>
+                          <div class="linie3"></div>
+                      </div>
+                  </nav>
+              </header>
+              <div class="content1">
+                  <div class="forside-tekst">
+                  <h1>Rydning og rengøring af dødsbo med respekt</h1>
+                  <br><br><br>
+                  <p>
+                      Har du mistet en i din nære omgangskreds, og står du nu tilbage med et dødsbo der skal ryddes?
+                      Det er ikke nogen nem situation og kan være en særdeles vanskelig proces selv at skulle i gang 
+                      med rydning af et dødsbo. Det er heller ikke noget, du bør stå alene med.
+                  </p>
+                  <br><br>
+                  <p>
+                      Vi er fuldt bevidst om, at en tømning kan være følelsesmæssigt hård, 
+                      og derfor er det vigtigt for os, at det foregår ordentligt og 
+                      respektfuldt i et for jer passende tempo.
+                  </p>
+  
+                  </div>
+              </div>
+              <!--Kontaktformular start-->
+              
+              <div class="kontaktformular">
+                  <div class="kontakt-sektion">
+                      <div class="kontakt-formular">
+                          <h1>Kontakt os</h1>
+                          <h2>Få et uforpligtende tilbud</h2>
+                          <form class="kontakt" action="" method="post">
+                              <select id="region" class="region" required>
+                                  <option>Vælg Region</option>
+                              </select>
+                              <select id="bolig" class="bolig" required>
+                                  <option>Vælg Bolig</option>
+                              </select>
+                              <input type="text" name="navn" class="tekst-boks" placeholder="Navn" required>
+                              <input type="email" name="email" class="tekst-boks" placeholder="Email" required>
+                              <input type="text" name="adresse" class="tekst-boks" placeholder="Adresse" required>
+                              <textarea name="besked" rows="5" placeholder="Din besked" required></textarea>
+                              <div class="send-knap2">
+                                  <input onclick="alertFunction()" type="submit" name="send" class="send-knap" value="Send">
+                              </div>
+                              <!--hilsen start-->
+                              <p class="hilsen" id="hilsen"></p>
+                              <!--hilsen slut-->
+                          </form>
+                      </div>
+                  </div>
+              </div>
+              <!--Kontaktformular slut-->    
+          </div>
 
-  <div class="tekstområde1">
-    <div class="tekststyle">
-    <h1>Hvad koster en rydning af et bo?</h1>
-      <p>
-        Du kan altid få et 100 procent gratis og uforpligtende tilbud på rydningen og eventuel efterfølgende klargøring og rengøring af boet.
-        Prisen på rydningen er en fast pris, der bliver beregnet ud fra, hvor mange arbejdstimer det tager to mand og en bil at tømme dødsboet.
-        Derefter bliver der lavet et fratræk i de værdigenstande, som er i hjemmet, og som ønskes indgået i boet.
-        Overstiger værdierne lønomkostninger, vil der blive lavet en udbetaling til jer.
-        Omvendt vil der blive tilsendt en faktura efter endt arbejde.
-      </p>
+          <section class="scroll_animation">
+              <span class="scroll-icon">
+                <span class="scroll-icon__dot"></span>
+              </span>
+          </section>
     </div>
-  </div>
-<div class="container2">
-  <div class="tekstområde2">
-      <h1>Hvor rydder vi?</h1>
-      <p> Her hos Butik Pulvis rydder vi primært på Fyn, men da vi stort set altid er på farten, i jagten på noget spændende indhold til vores butik, kan vi aldrig udelykke en tur henover broen, til enten Jylland eller Sjælland.
-        Så skulle du stå i den situation hvor at du har brug for en hjælpende hånd, til en uoverskuelig opgave, er du mere end velkommen til at kontakte os, og aftale nærmere.
-        <br> <br>
-        Kontakt os for at få et seriøst og uforpligtende tilbud.
-      </p>
-  </div>
-  <div class="tekstområde_img">
-    <img src="../mediefiler/png/danmarkskort.png" alt="danmarkskort">
-  </div>
-</div>
-  <div class="tekstområde3">
-    <div class="tekststyle">
-      <h1>Hvordan foregår rydningen?</h1>
-        <h2> Vurdering af dødsbo </h2>
-          <p>
-          Vi registrerer og vurderer indbo for advokater til brug for boopgørelser.
-          Vores vurderinger bygger på aktuelle priser blandt opkøbere og på auktioner.<br>
-          Vi kender markedet og har et solidt netværk i branchen.
+
+    <div class="tekstområde1">
+      <div class="tekststyle">
+      <h1>Hvad koster en rydning af et bo?</h1>
+        <p>
+          Du kan altid få et 100 procent gratis og uforpligtende tilbud på rydningen og eventuel efterfølgende klargøring og rengøring af boet.
+          Prisen på rydningen er en fast pris, der bliver beregnet ud fra, hvor mange arbejdstimer det tager to mand og en bil at tømme dødsboet.
+          Derefter bliver der lavet et fratræk i de værdigenstande, som er i hjemmet, og som ønskes indgået i boet.
+          Overstiger værdierne lønomkostninger, vil der blive lavet en udbetaling til jer.
+          Omvendt vil der blive tilsendt en faktura efter endt arbejde.
         </p>
-          <br>
-            <h2> Sortering og genbrug </h2>
+      </div>
+    </div>
 
-              <p>
-              Når vi rydder et dødsbo, bliver personlige dokumenter og elektroniske lagringsmedier altid destrueret eller efter aftale overdraget til bohaver.<br>Er der effekter af stor affektionsværdi eller andet, som ønskes gemt, aftales det ved indgåelse af aftale.
-              Tøj, briller og hjælpemidler doneres til humanitære organisationer.
-
-              <br>Affald sorterer vi efter gældende regler, inden det afleveres på genbrugsstation til genanvendelse.
-              Efterfølgende rengøring er altid med svanemærkede produkter.
-              </p>
-
+    <div class="container2">
+      <div class="tekstområde2">
+          <h1>Hvor rydder vi?</h1>
+          <p> Her hos Butik Pulvis rydder vi primært på Fyn, men da vi stort set altid er på farten, i jagten på noget spændende indhold til vores butik, kan vi aldrig udelykke en tur henover broen, til enten Jylland eller Sjælland.
+            Så skulle du stå i den situation hvor at du har brug for en hjælpende hånd, til en uoverskuelig opgave, er du mere end velkommen til at kontakte os, og aftale nærmere.
+            <br> <br>
+            Kontakt os for at få et seriøst og uforpligtende tilbud.
+          </p>
       </div>
 
+      <div class="tekstområde_img">
+        <img src="../mediefiler/png/danmarkskort.png" alt="danmarkskort">
+      </div>
 
-
-
-</div>
     </div>
+        <div class="tekstområde3">
+          <div class="tekststyle">
+            <h1>Hvordan foregår rydningen?</h1>
+              <h2> Vurdering af dødsbo </h2>
+                <p>
+                Vi registrerer og vurderer indbo for advokater til brug for boopgørelser.
+                Vores vurderinger bygger på aktuelle priser blandt opkøbere og på auktioner.<br>
+                Vi kender markedet og har et solidt netværk i branchen.
+              </p>
+              <br>
+              <h2> Sortering og genbrug </h2>
+                <p>
+                  Når vi rydder et dødsbo, bliver personlige dokumenter og elektroniske lagringsmedier altid destrueret eller efter aftale overdraget til bohaver.<br>Er der effekter af stor affektionsværdi eller andet, som ønskes gemt, aftales det ved indgåelse af aftale.
+                  Tøj, briller og hjælpemidler doneres til humanitære organisationer.
+                  <br>
+                  Affald sorterer vi efter gældende regler, inden det afleveres på genbrugsstation til genanvendelse.
+                  Efterfølgende rengøring er altid med svanemærkede produkter.
+                </p>
+          </div>
+      </div>
 
-</body>
+      <!-- tilbage til toppen knap -->
+
+      <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+
+    <!-- Footer starter -->
+
+    <footer>
+        <div class="footer">
+            <div class="footerbg">
+                <div class="footerindhold">
+                    <div class="footerboks aabningstider">
+                        <div class="ur_png">
+                            <img src="../Mediefiler/png/Ur.png">
+                        </div>
+
+                        <h2>Åbningstider</h2>
+                        <p>Mandag-Fredag: 11:00-17:30</p>
+                        <p>Lørdag: 11:00-15:00</p>
+                    </div>
+
+                    <div class="footerboks kontakt_info">
+
+                        <div class="logo_footer">
+                            <img src="../Mediefiler/png/logo.png">
+                        </div>
+
+                        <div class="telefon_png">
+                            <img src="../Mediefiler/png/Telefon.png">
+                        </div>
+
+                        <h2>Kontakt</h2>
+                        <p>tlf: <a href="tel:+4561743939">61 74 39 39</a></p>
+                        <p>Mail: <a href="mailto:+4561743939">Pulvis@info.dk</a></p>
+                    
+                        <div class="soMe_icons">
+                            <div class="facebook_png">
+                                <img src="../Mediefiler/png/facebook.png">
+                            </div>
+                            <div class="instagram_png">
+                                <img src="../Mediefiler/png/instagram.png" href="">
+                            </div>
+                        </div>
+
+                        <div class="copyright">
+                            <p>Copyright Ⓒ 2022 - Butik Pulvis</p>
+                        </div>
+
+                    </div>
+                    <div class="footerboks adresse">
+                        <div class="maps_png">
+                            <img src="../Mediefiler/png/Maps.png">
+                        </div>
+
+                        <h2>Adresse</h2>
+                        <p>Vesterbro 13, 5000 Odense</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+  </body>
 </html>
