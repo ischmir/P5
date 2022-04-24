@@ -42,6 +42,13 @@
     border-width: 2px;
     border-color: #fff;
 }
+.sg-ikon-img{
+    width: 20%;
+    height: 50%;
+    margin-left: 10%;
+}
+
+
 .sg-inputfelter{
     background-color: #91B37F;
     border-style: solid;
