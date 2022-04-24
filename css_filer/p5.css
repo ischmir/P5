@@ -100,19 +100,16 @@ h1, h2, h3, h4
 }
 
 .trexinfo1{
-    background-color: #91B37F;
+    background-image: url(../mediefiler/svg/cirklerdesk.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
 }
 
-.trexinfo1 h2{
-    margin-top: 5vh;
-    margin-bottom: 3vh;
-
-}
 .trexinfo h2{
     margin-top: 5vh;
     margin-bottom: 3vh;
-
+    color: #333;
 }
 
 .trexinfo1 p{
@@ -125,6 +122,16 @@ h1, h2, h3, h4
 }
 
 /* Billeder på om-pulvis siden */
+
+/* første billede på om-os-siden start */
+
+.forside img{
+    
+}
+
+
+/* første billede stop */
+
 .om-os-billede{
     width: 100vw;
 }
@@ -132,7 +139,10 @@ h1, h2, h3, h4
 .om-os-billede img{
     width: 100%;
 }
-
+.om_pulvis_png{
+    width: 13vh;
+    margin: auto;
+}
 
 
 .tre_bokse
