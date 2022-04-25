@@ -1,7 +1,0 @@
-<svg id="Component_10_1" data-name="Component 10 – 1" xmlns="http://www.w3.org/2000/svg" width="103" height="103" viewBox="0 0 103 103">
-  <g id="Ellipse_24" data-name="Ellipse 24" fill="none" stroke="#91b37f" stroke-width="5">
-    <circle cx="51.5" cy="51.5" r="51.5" stroke="none"/>
-    <circle cx="51.5" cy="51.5" r="49" fill="none"/>
-  </g>
-  <path id="Icon_ionic-ios-pin" data-name="Icon ionic-ios-pin" d="M24.142,3.375c-8.981,0-16.267,6.767-16.267,15.1,0,11.749,16.267,31.89,16.267,31.89s16.267-20.142,16.267-31.89C40.409,10.142,33.123,3.375,24.142,3.375Zm0,21.565a5.3,5.3,0,1,1,5.3-5.3A5.3,5.3,0,0,1,24.142,24.94Z" transform="translate(27.358 24.628)" fill="#91b37f"/>
-</svg>
