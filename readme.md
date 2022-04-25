@@ -1,3 +1,5 @@
+!!!!THIS IS NOT THE MAIN BRANCH! CHECK "NEW-BRANCH FOR THE RIGHT CODE!!!!
+
 This is the repository of project 5 by team 14 from the education Multimediedesignr on UCL Seebladsglade 1
 
 In this project we got the task to create 3 different media channels for one of the following companies.
