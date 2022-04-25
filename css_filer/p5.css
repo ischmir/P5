@@ -46,7 +46,11 @@ body
 
 h1, h2, h3, h4
 {
+<<<<<<< Updated upstream
     text-align: center;
+=======
+    font-size: 15px;
+>>>>>>> Stashed changes
 }
 
 p
@@ -204,6 +208,10 @@ nav{
     background-blend-mode:saturation;
     display: flex;
     flex-direction: row;
+<<<<<<< Updated upstream
+=======
+    
+>>>>>>> Stashed changes
 }
 
 .content1{
@@ -362,7 +370,12 @@ nav{
 {
     display: flex;
     flex-direction: column;
+<<<<<<< Updated upstream
     margin-top: 120px;
+=======
+    margin: 0 auto;
+    
+>>>>>>> Stashed changes
 }
 
 .tre_bokse h2
@@ -378,12 +391,17 @@ nav{
 {
     display: flex;
     justify-content: center;
+<<<<<<< Updated upstream
 }
 
 .om_pulvis_tekst, .priser_tekst, .tilbud_tekst
 {
     margin-left: 5%;
     margin-right: 5%;
+=======
+    text-align: center;
+    width: 400px;
+>>>>>>> Stashed changes
 }
 
 .priser_png, .om_pulvis_png, .tilbud_png
@@ -479,7 +497,11 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
+<<<<<<< Updated upstream
     margin-top: 12rem;
+=======
+    margin-top: 10rem;
+>>>>>>> Stashed changes
 }
 
 .facebook_png
@@ -798,6 +820,14 @@ nav{
 
 }
 
+<<<<<<< Updated upstream
+=======
+.footerindhold
+{
+    transform: translateY(-20%);
+}
+
+>>>>>>> Stashed changes
 /* VIEWPORT = TABLET START*/
 
 @media screen and (max-width: 1080px) {
