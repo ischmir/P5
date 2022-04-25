@@ -4,44 +4,158 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt Pulvis</title>
+    <link rel="stylesheet" href="../css_filer/timm.css">
+    <link rel="stylesheet" href="../css_filer/p5.css">
     <link rel="stylesheet" href="../css_filer/frederik2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <script src="../js_filer/frederik.js" defer></script>
+    <script src="../js_filer/timm.js" defer></script>
+    <script src="../js_filer/p5.js" defer></script>
   </head>
   <body>
+    <div class="header">
+      <div class="forside-kontakt">
+          <header>
+              <nav>
+                  <div class="logo">
+                      <img src="../mediefiler/svg/pulvis-logo.svg" class="logo_svg" alt="Pulvis Logo">
+                  </div>
+                  <ul class="nav-links">
+                      <li>
+                          <a href="../html_filer/index.html">Forside</a>
+                      </li>
+                      <li>
+                          <a href="../html_filer/doedsbo_info.html">Rydning af Dødsbo</a>
+                      </li>
+                      <li>
+                          <a href="../html_filer/om_pulvis.html">Om Pulvis</a>
+                      </li>
+                      <li>
+                          <a href="../html_filer/kontakt.html">Kontakt</a>
+                      </li>
+                  </ul>
+                  <div class="burger">
+                      <div class="linie1"></div>
+                      <div class="linie2"></div>
+                      <div class="linie3"></div>
+                  </div>
+              </nav>
+          </header>
+          <div class="content1">
+              <div class="forside-tekst-kontakt">
+              <h1>Rydning og rengøring af dødsbo med respekt</h1>
+              <br><br><br>
+              <p>
+                  Har du mistet en i din nære omgangskreds, og står du nu tilbage med et dødsbo der skal ryddes?
+                  Det er ikke nogen nem situation og kan være en særdeles vanskelig proces selv at skulle i gang 
+                  med rydning af et dødsbo. Det er heller ikke noget, du bør stå alene med.
+              </p>
+              <br><br>
+              <p>
+                  Vi er fuldt bevidst om, at en tømning kan være følelsesmæssigt hård, 
+                  og derfor er det vigtigt for os, at det foregår ordentligt og 
+                  respektfuldt i et for jer passende tempo.
+              </p>
 
-    <!--Kontaktformular start-->
-    <div class="kontakt-sektion" class"kontakt-sektion2">
-      <div class="kontakt-formular" class"kontakt-formular2">
-        <h1>Kontakt os</h1>
-        <h2>Få et uforpligtende tilbud</h2>
-        <form class="kontakt" action="" method="post">
-          <div class="name-email">
-            <input type="text" name="navn" class="tekst-boks" placeholder="Navn" required>
-            <input type="email" name="email" class="tekst-boks" placeholder="Email" required>
+              </div>
           </div>
-          <div class="dropdown3">
-            <select id="region" class="region" required>
-              <option>Vælg Region</option>
-            </select>
-            <select id="bolig" class="bolig" required>
-              <option>Vælg Bolig</option>
-            </select>
+          <!--Kontaktformular start-->
+          
+          <div class="kontaktformular">
+              <div class="kontakt-sektion">
+                  <div class="kontakt-formular">
+                      <h1>Kontakt os</h1>
+                      <h2>Få et uforpligtende tilbud</h2>
+                      <form class="kontakt" action="" method="post">
+                          <select id="region" class="region" required>
+                              <option>Vælg Region</option>
+                          </select>
+                          <select id="bolig" class="bolig" required>
+                              <option>Vælg Bolig</option>
+                          </select>
+                          <input type="text" name="navn" class="tekst-boks" placeholder="Navn" required>
+                          <input type="email" name="email" class="tekst-boks" placeholder="Email" required>
+                          <input type="text" name="adresse" class="tekst-boks" placeholder="Adresse" required>
+                          <textarea name="besked" rows="5" placeholder="Din besked" required></textarea>
+                          <div class="send-knap2">
+                              <input onclick="alertFunction()" type="submit" name="send" class="send-knap" value="Send">
+                          </div>
+                          <!--hilsen start-->
+                          <p class="hilsen" id="hilsen"></p>
+                          <!--hilsen slut-->
+                      </form>
+                  </div>
+              </div>
           </div>
-          <input type="text" name="adresse" class="adresse" placeholder="Adresse" required>
-          <textarea class="tekst-område" name="besked" rows="5" placeholder="Din besked" required></textarea>
-          <div class="send-knap2">
-            <input onclick="alertFunction()" type="submit" name="send" class="send-knap" value="Send">
-          </div>
-
-          <!--hilsen start-->
-          <p class="hilsen" id="hilsen"></p>
-          <!--hilsen slut-->
-
-        </form>
+          <!--Kontaktformular slut-->    
       </div>
-    </div>
-    <!--Kontaktformular slut-->
+  </div>
+        <!-- tilbage til toppen knap -->
 
+        <a href="#" class="to-top">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+
+      <!-- Footer starter -->
+
+      <footer>
+          <div class="footer">
+              <div class="footerbg">
+                  <div class="footerindhold">
+                      <div class="footerboks aabningstider">
+                          <div class="ur_png">
+                              <img src="../Mediefiler/png/Ur.png">
+                          </div>
+
+                          <h2>Åbningstider</h2>
+                          <p>Mandag-Fredag: 11:00-17:30</p>
+                          <p>Lørdag: 11:00-15:00</p>
+                      </div>
+
+                      <div class="footerboks kontakt_info">
+
+                          <div class="logo_footer">
+                              <img src="../Mediefiler/png/logo.png">
+                          </div>
+
+                          <div class="telefon_png">
+                              <img src="../Mediefiler/png/Telefon.png">
+                          </div>
+
+                          <h2>Kontakt</h2>
+                          <p>tlf: <a href="tel:+4561743939">61 74 39 39</a></p>
+                          <p>Mail: <a href="mailto:+4561743939">Pulvis@info.dk</a></p>
+                      
+                          <div class="soMe_icons">
+                              <div class="facebook_png">
+                                  <a href="">
+                                      <img src="../Mediefiler/png/facebook.png">
+                                  </a>
+                              </div>
+                              <div class="instagram_png">
+                                  <a href="https://www.instagram.com/butikpulvis_ucl_projekt/">
+                                      <img src="../Mediefiler/png/instagram.png">
+                                  </a> 
+                              </div>
+                          </div>
+
+                          <div class="copyright">
+                              <p>Copyright Ⓒ 2022 - Butik Pulvis</p>
+                          </div>
+
+                      </div>
+                      <div class="footerboks adresse">
+                          <div class="maps_png">
+                              <img src="../Mediefiler/png/Maps.png">
+                          </div>
+
+                          <h2>Adresse</h2>
+                          <p>Vesterbro 13, 5000 Odense</p>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </footer>
   </body>
 </html>

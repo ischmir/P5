@@ -9,8 +9,13 @@
 
 /* body
 {
+<<<<<<< Updated upstream
     background: #91B37F;
 } */
+=======
+    background-image: url("../Mediefiler/svg/cirklerdesk2.svg");
+}
+>>>>>>> Stashed changes
 
 /* Skaber grid */
 
@@ -40,7 +45,11 @@ h1, h2, h3, h4
 
 /* .grid div:nth-child(even)
 {
+<<<<<<< Updated upstream
     background-color: #91B37F;
+=======
+    font-size: 15px;
+>>>>>>> Stashed changes
 }
 
 .grid div:nth-child(odd)
@@ -132,6 +141,7 @@ nav{
 .nav-links li{
     list-style: none;
 }
+
 .nav-links a{
     color: #fff;
     text-decoration: none;
@@ -152,6 +162,55 @@ nav{
 }
 /* MENU CSS DESKTOP SLUT*/
 
+<<<<<<< Updated upstream
+=======
+/* SCROLL ANIMATION */
+
+@keyframes scroll_2 
+{
+    0%   { transform: translateY(0); opacity: 1; }
+    25%  { opacity: 1; }
+    75%  { transform: translateY(.75em); opacity: 0; }
+    100% { transform: translateY(0); opacity: 0; }
+}
+
+.scroll-icon__dot 
+{
+    display: block;
+    position: absolute;
+    left: 50%;
+    background: #91B37F;
+    height: .5em;
+    width: .5em;
+    top: .6em;
+    margin-left: -.25em;
+    border-radius: 50%;
+    transform-origin: top center;
+    backface-visibility: hidden;
+    animation: scroll_2 2s ease-out infinite;
+}
+  
+.scroll-icon 
+{
+    display: block;
+    position: relative;
+    height: 3em;
+    width: 1.5em;
+    border: .25em solid #91B37F;
+    border-radius: 1rem;
+}
+
+.scroll_animation 
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-150%);
+}
+
+>>>>>>> Stashed changes
 /* FORSIDE CSS DESKTOP START */
 
 .forside {
@@ -162,7 +221,10 @@ nav{
     display: flex;
     flex-direction: row;
     
+<<<<<<< Updated upstream
     
+=======
+>>>>>>> Stashed changes
 }
 
 .content1{
@@ -312,10 +374,22 @@ nav{
     background-color: rgba(152, 188, 133, 1);
   }
 
+.en_boks
+{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
 .tre_bokse
 {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
+<<<<<<< Updated upstream
+=======
+    margin: 0 auto;
+    
+>>>>>>> Stashed changes
 }
 
 .tre_bokse h2
@@ -331,6 +405,11 @@ nav{
 {
     display: flex;
     justify-content: center;
+<<<<<<< Updated upstream
+=======
+    text-align: center;
+    width: 400px;
+>>>>>>> Stashed changes
 }
 
 .priser_png, .om_pulvis_png, .tilbud_png
@@ -338,7 +417,6 @@ nav{
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
-    margin-top: 5rem;
 }
 
 .om_pulvis p
@@ -346,6 +424,59 @@ nav{
     margin-bottom: 5rem;
     text-align: center;
 }
+
+/* tekst og tekstbeholdere på om-pulvis siden */
+
+.trexinfo{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.trexinfo1{
+    background-image: url(../mediefiler/svg/cirklerdesk.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.trexinfo h2{
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    color: #333;
+}
+
+.trexinfo1 p{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.trexinfo p{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Billeder på om-pulvis siden */
+
+/* første billede på om-os-siden start */
+
+.forside img{
+    
+}
+
+
+/* første billede stop */
+
+.om-os-billede{
+    width: 100vw;
+}
+
+.om-os-billede img{
+    width: 100%;
+}
+.om_pulvis_png{
+    width: 13vh;
+    margin: auto;
+}
+
 
 /* Footer startes */
 
@@ -419,7 +550,11 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
+<<<<<<< Updated upstream
     margin-top: 1rem;
+=======
+    margin-top: 10rem;
+>>>>>>> Stashed changes
 }
 
 .facebook_png
@@ -465,6 +600,123 @@ nav{
     opacity:1;
 }
 
+<<<<<<< Updated upstream
+=======
+
+.tekstområde1 p {
+    color:white;
+    padding-left: 11%;
+    padding-top: 20px;
+    padding-right: 10%;
+    text-align:justify;
+}
+
+.tekstområde1 h1 {
+    margin-bottom: 2vh;
+    color:white;
+    margin-left: 11%;
+    margin-right: 50%;
+}
+
+.tekststyle{
+    width: 90%;
+    height: 50%;
+    margin-top: 10vh;
+
+}
+/* baggrundsbillede til tekstområde 1, hvor der er tilføjet opacity */
+.tekstområde1{
+    height: 500px;
+    font-size: 20px;
+    background: rgba(0,0,0,0.5)url(../mediefiler/png/baggrundpulvis.png);
+    background-size: cover;
+    background-blend-mode:darken;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.tekstområde2 p{
+    color:white;
+    margin-left: 10%;
+    margin-top: 20px;
+    padding-right:10px;
+}
+
+.tekstområde2 h1 {
+    margin-bottom: 2vh;
+    color:white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 145px;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background: #91B37F;
+
+}
+.tekstområde2{
+    height:600px;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.tekstområde2 p
+{
+    width: 500px;
+}
+
+.tekstområde2_img{
+    display:flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.tekstområde3
+{
+    height: 600px;
+    color: #707070;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vh;
+}
+
+.tekstområde3 p{
+    color:#707070;
+    margin-left: 10%;
+    margin-top: 20px;
+    padding-right: 10px;
+    text-align:justify;
+}
+
+.tekstområde3 h1 {
+    margin-bottom: 2vh;
+    color:#707070;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1vh;
+}
+
+.tekstområde3 h2 {
+    margin-bottom: 2vh;
+    color:#707070;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: bold;
+
+}
+
+.footerindhold
+{
+    transform: translateY(-20%);
+}
+
+>>>>>>> Stashed changes
 /* VIEWPORT = TABLET START*/
 
 @media screen and (max-width: 1080px) {
